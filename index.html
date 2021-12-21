@@ -42,10 +42,37 @@
                         </p>
 
                         <ul class="actions special">
-                            <form action="https://covid-react-app-irl.herokuapp.com/">
-                                <input class="btn btn-default" style="text-transform: capitalize; font-weight: 300;" type="submit" value="View App" />
-                            </form>
+                            <input
+                                type="button"
+                                value="View App"
+                                class="btn btn-default"
+                                data-toggle="modal"
+                                data-target="#covidModal"
+                                style="text-transform: capitalize;"
+                            />
                         </ul>
+
+                        <div class="modal fade" id="covidModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content" style="background-color: white;">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Heads up!</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  Due to the large volume of data, this application can take up to 1 minute to load.
+                                </div>
+                                <div class="modal-footer" style="display: flex; justify-content: space-between;">
+                                  <input type="button" value="Go back" data-dismiss="modal" />
+                                  <form action="https://covid-react-app-irl.herokuapp.com/" style="margin: 0px">
+                                    <input type="submit" value="Proceed" style="text-transform: capitalize; background-color: #0756c7; color: white !important" />
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                 </div>
                 <div class="col-sm-1"></div>
                 <div class="col-md-5">
@@ -85,7 +112,7 @@
                         </p>
 
                         <ul class="actions special">
-                            <form action="https://eager-bohr-6449cc.netlify.app/">
+                            <form action="https://react-redux-cart-app.netlify.app/">
                                 <input class="btn btn-default" style="text-transform: capitalize; font-weight: 300;" type="submit" value="View App" />
                             </form>
                         </ul>
